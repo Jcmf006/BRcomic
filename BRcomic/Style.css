@@ -1,0 +1,125 @@
+.row{
+  background-color: black;
+}
+header{
+  background-color: rgb(255, 255, 255);
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+.Letra{
+  color: white;
+}
+.Letra2{
+  color: white;
+}
+    body{
+    width: 100%; 
+        height: 200px;
+        object-fit: cover;
+}
+    .img-uniforme {
+        width: 100%; 
+        height: 200px; 
+        object-fit: cover;
+    }
+    .carousel {
+        width: 400px;
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+      }
+      
+      .carousel-inner {
+        display: flex;
+        transition: margin-left 0.5s ease-in-out;
+      }
+      
+      .carousel img {
+        width: 100%;
+        height: 100%;
+      }
+      
+      .prev, .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #ddd;
+        padding: 16px;
+        color: black;
+        cursor: pointer;
+      }
+      
+      .prev {
+        left: 0;
+      }
+      
+      .next {
+        right: 0;
+      }
+      .card-container {
+        display: flex; 
+        flex-wrap: wrap;
+        margin: 0 auto; 
+        gap: 20px; 
+      }
+      
+      .card {
+        width: calc(33% - 20px); 
+        background-color: #fff;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        padding: 15px;
+        text-align: center; 
+      }
+      
+      .card img {
+        width: 100%;
+        height: 200px; 
+        object-fit: cover; 
+      }
+      
+      .card h3 {
+        margin-top: 10px;
+        font-weight: bold;
+      }
+      
+      .card p {
+        margin: 5px 0;
+        font-size: 14px;
+      }
+      
+      .card a {
+        display: inline-block;
+        padding: 5px 10px;
+        background-color: #007bff; 
+        color: #fff;
+        text-decoration: none;
+        border-radius: 3px;
+        transition: background-color 0.2s ease-in-out;
+      }
+      
+      .card a:hover {
+        background-color: #0069d9; 
+      }
+      
+      @media (max-width: 768px) {
+        .card {
+          width: calc(50% - 10px); 
+        }
+      }
+      
+      @media (max-width: 576px) {
+        .card {
+          width: 100%; 
+        }
+      }
+      .linha-separadora{
+        border: 0; /*Remove a borda padrão*/
+        height: 2px; /*Espessura de linha*/
+        background-color: #fff; /*Cor da linha*/
+        margin: 20px 0; /*Margem acima e baixo*/
+      }
+      footer{
+        color: #fefefe;
+      }

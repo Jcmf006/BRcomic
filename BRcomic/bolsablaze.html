@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image.png" type="image/x-icon">
+    <link rel="stylesheet" href="testBRcomic.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>BRcomic</title>
+    <style>
+        .dish-rate img {
+            width: 20px; /* Defina a largura desejada */
+            height: 20px; /* Defina a altura desejada */
+        }
+        *{
+    margin: 0; /* Remove a margem de todos os elementos */
+    padding: 0; /* Remove o preenchimento de todos os elementos */
+    box-sizing: border-box; /* Define o modelo de caixa para incluir a largura da borda e do preenchimento no cálculo da largura e altura do elemento */
+}
+:root{
+    --cor-padrao: #ff523b;
+    --cor-padrao-hover: #f3b2e5;
+    --cor-font: #ffffff;
+    --cor-font-p:#555;
+    --cor-btn:#563434;
+    --cor-btn-hover:#3d2acc;
+    --cor-btn-fonte:#ffffff;
+    --cor-fonte-corpo:#555;
+    --cor-fonte-corpo-leve:#777;
+}
+body{
+    font-family: 'poppins', sans-serif;
+}
+.banner{
+    background-color: #000000;
+}
+.product-container {
+    display: flex;
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    flex: 1;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+.description-container {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.description-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.description-container p {
+    margin-bottom: 10px;
+}
+
+.description-container h3 {
+    font-size: 18px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+.product-container {
+    display: flex;
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-images {
+    flex: 1;
+}
+
+.product-images img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+.thumbnails {
+    display: flex;
+    margin-top: 10px;
+}
+
+.thumbnails img {
+    width: 100px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.product-details {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.product-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-details .price {
+    font-size: 28px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.product-details p {
+    margin-bottom: 10px;
+}
+
+.buy-button, .add-to-cart {
+    padding: 15px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.buy-button {
+    background-color: #3483fa;
+    color: white;
+    margin-right: 10px;
+    outline: none;
+    font-weight: 800;
+    letter-spacing: 3px;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #949494;
+}
+
+.add-to-cart {
+    background-color: #00a650;
+    color: white;
+    outline: none;
+    font-weight: 800;
+    letter-spacing: 3px;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #949494;
+}
+
+.product-description {
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.questions {
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+    </style>
+</head>
+<body>
+    <header></header>
+        <div class="banner">
+            <div class="container">
+                <div class="logo">
+                    <img src="logo brcomic grande.jpg" alt="BRcomic" width="125px">
+                    <div class="navbar">
+                        <div class="search">
+                            <label for="searchinput">
+                                <ion-icon name="search"></ion-icon>
+                            </label>
+                            <input type="text" id="searchinput" placeholder="Pesquisar">
+                        </div>
+                        <nav>
+                            <ul id="menuItens">
+                                <li><a href="https://apoia.se/brcomic" title="">Apoia-se</a></li>
+                                <li><a href="testBRcomic.html" title="">início</a></li>
+                                <li><a href="" title="">Quadrinhos</a></li>
+                                <li><a href="" title="">notificações</a></li>
+                                <li><a href="testloja.html" title="">loja</a></li>
+                                <li><a href="login.html" title="">Login</a></li>
+                                <li><a href="" title=""><img src="trolley.png" alt=""></a></li>
+    
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+<section>
+    <div class="product-container">
+        <div class="image-container">
+            <img src="Sample1 Mockup (2).jpg" alt="Caneca temática do Águia de Aço" width="500">
+        </div>
+        <div class="description-container">
+                <h2>Caneca temática do Águia de Aço</h2>
+                <p>Avaliação: 5,0 ⭐⭐⭐⭐⭐</p>
+                <h3>Preço: R$45,00</h3>
+                <p>em até <strong>3x de R$ 15,00</strong> sem juros</p>
+                <p>Frete R$5,00</p>
+
+                <button class="buy-button">Comprar agora</button>
+                <button class="add-to-cart">Adicionar ao carrinho</button>
+            </div>
+        </div>
+
+        <div class="product-description">
+            <h3>Descrição do produto</h3>
+            <p>Esta caneca preta apresenta um design elegante e sofisticado, destacando uma arte detalhada de uma fênix em ascensão, com suas asas amplas e plenas de detalhes finos que envolvem um círculo central, criando uma sensação de movimento e renascimento.</p>
+        </div>
+
+        <div class="questions">
+            <h3>Perguntas e respostas</h3>
+            <div class="question">
+                <p><strong>Pergunta:</strong> O produto tem garantia?</p>
+                <p><strong>Resposta:</strong> Sim, o produto tem 1 ano de garantia pelo fabricante.</p>
+            </div>
+            <div class="question">
+                <p><strong>Pergunta:</strong> É resistente à água?</p>
+                <p><strong>Resposta:</strong> Sim, possui certificação IP68 de resistência à água.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BRcomic - Todos os direitos reservados</p>
+        <p>contato: 55 (79)999762937</p>
+    </footer>
+    <script>
+        function changeImage(imgElement) {
+            const mainImage = document.getElementById('mainImage');
+            mainImage.src = imgElement.src;
+        }
+            </script>
+</body>
+</html>
